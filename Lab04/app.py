@@ -12,13 +12,14 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--window-size=1920,1080')
 options.add_argument('--disable-gpu')
-driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()), options=options)
+#driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()), options=options)
 
 
 def main():
 
     # 打開交大
-    browser = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+    # browser = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+    browser = webdriver.Firefox(service=Service(GeckoDriverManager().install()), options=options)
     browser.get("https://www.nycu.edu.tw/")
 
     # 放大視窗
