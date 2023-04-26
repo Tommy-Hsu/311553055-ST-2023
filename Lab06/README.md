@@ -1,7 +1,7 @@
-# 311553055 Lab06
+# 311553055 許博濟 Lab06
 ## 環境, 編譯器及版本
 
-Ubuntu 22.04.2 LTS ( aarch64 版本並安裝在 docker)
+Ubuntu 22.04.2 LTS ( aarch64 版本並安裝在 docker) <br>
 gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0
 ## Lab 6
 
@@ -112,9 +112,7 @@ a
 ==4424== For lists of detected and suppressed errors, rerun with: -s
 ==4424== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
 ```
-:::success
-ASan 能, Valgrind 能
-:::
+` ASan 能, Valgrind 能 `
 
 ### Stack out-of-bounds
 ```c=
@@ -215,9 +213,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 ==6436== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 Aborted
 ```
-:::success
-ASan 能, Valgrind 不能
-:::
+`ASan 能, Valgrind 不能`
 ### Global out-of-bounds
 ```c=
 #include <stdio.h>
@@ -291,9 +287,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 ==6998== For lists of detected and suppressed errors, rerun with: -s
 ==6998== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 ```
-:::success
-ASan 能, Valgrind 不能
-:::
+`ASan 能, Valgrind 不能`
 ### Use-after-free
 ```c=
 #include <stdio.h>
@@ -403,9 +397,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 ==7523== For lists of detected and suppressed errors, rerun with: -s
 ==7523== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
 ```
-:::success
-ASan 能, Valgrind 能
-:::
+`ASan 能, Valgrind 能`
 ### Use-after-return
 ```c=
 #include <stdio.h>
@@ -496,9 +488,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 ==193== For lists of detected and suppressed errors, rerun with: -s
 ==193== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
 ```
-:::success
-ASan 能, Valgrind 能
-:::
+`ASan 能, Valgrind 能`
 ### Redzone
 ```c=
 #include<stdio.h>
@@ -515,7 +505,5 @@ int main(){
 da0af5e0
 ```
 
-:::success
- ASan 無法找出來 Stack buffer overflow 剛好越過 redzone(並沒有對 redzone 做讀寫) 的危險情況
-:::
+`ASan 無法找出來 Stack buffer overflow 剛好越過 redzone(並沒有對 redzone 做讀寫) 的危險情況`
 
