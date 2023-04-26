@@ -1,4 +1,4 @@
-#311553055 Lab06 README.md
+# 311553055 Lab06
 ## 環境, 編譯器及版本
 
 Ubuntu 22.04.2 LTS ( aarch64 版本並安裝在 docker)
