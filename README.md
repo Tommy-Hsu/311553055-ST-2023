@@ -9,3 +9,5 @@
 [![Lab04 CI](https://github.com/Tommy-Hsu/311553055-ST-2023/actions/workflows/Lab04-CI.yml/badge.svg)](https://github.com/Tommy-Hsu/311553055-ST-2023/actions/workflows/Lab04-CI.yml)
 
 [![Lab05 CI](https://github.com/Tommy-Hsu/311553055-ST-2023/actions/workflows/Lab05-CI.yml/badge.svg)](https://github.com/Tommy-Hsu/311553055-ST-2023/actions/workflows/Lab05-CI.yml)
+
+[![Lab08 CI](https://github.com/Tommy-Hsu/311553055-ST-2023/actions/workflows/Lab08-CI.yml/badge.svg)](https://github.com/Tommy-Hsu/311553055-ST-2023/actions/workflows/Lab08-CI.yml)
